@@ -34,7 +34,17 @@
             <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.123456789=Toyota+Prado" target="_blank">
                 <button class="book-button">Book Now</button>
             </a>
-        </div>
+        </div>// Smooth Fade-in Effect for Vehicles
+document.addEventListener("DOMContentLoaded", function () {
+    let vehicles = document.querySelectorAll(".vehicle");
+    vehicles.forEach((vehicle, index) => {
+        setTimeout(() => {
+            vehicle.style.opacity = "1";
+            vehicle.style.transform = "translateY(0)";
+        }, index * 300);
+    });
+});
+
     </div>
 
     <script src="script.js"></script>
